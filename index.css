@@ -1,5 +1,6 @@
 body {
 	font-family: "Poppins";
+	background-color: #272044;
 }
 
 .container {
@@ -7,12 +8,23 @@ body {
 	margin: 0 auto;
 }
 
+section {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 100px;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 64px;
+}
+
 /*Hero section*/
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("images/vegas.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/vegas.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #ffffff;
+	color: white;
 	text-align: center;
 	padding: 200px 0;
 }
@@ -44,14 +56,112 @@ header a {
 	font-size: 14px;
 	line-height: 21px;
 	text-align: center;
-	padding: 16px 32px;
-	background-color: #ffffff;
 	color: #272044;
+	padding: 16px 32px;
+	margin-top: 32px;
+	display: inline-block;
+	letter-spacing: 3px;
 	text-decoration: none;
+	text-transform: uppercase;
+	background-color: white;
+}
+
+/*Main Section*/
+main {
+	background-color: white;
+}
+
+main h2 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 5px;
+	color: #272044;
+	opacity: 0.3;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+main h3 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	color: #272044;
+	margin: 0;
+}
+
+main h4 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: #272044;
+	margin: 0;
+}
+
+main h5 {
+	font-weight: 700;
+	font-size: 13px;
+	margin: 0;
+	line-height: 19.5px;
+	color: #272044;
+}
+
+main p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #272044;
+	opacity: 0.7;
+}
+
+.grid-2-col {
+	grid-template-columns: 1fr 1fr;
+}
+
+.img-responsive {
+	max-width: 100%;
+	display: block;
+}
+
+/*Second Section*/
+.secondary {
+	background-color: #f8f8f8;
+}
+
+.secondary h2,
+.secondary h3 {
+	text-align: center;
+}
+
+.grid-3-col {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+	background-color: white;
+	margin: 30px 0;
+}
+
+.card-body {
+	padding: 30px;
+}
+
+.card-footer {
+	padding: 0 30px 30px;
+}
+
+.btn {
+	display: block;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	display: inline-block;
-	margin-top: 32px;
+	padding: 16px 32px;
+	background-color: #462cb2;
+	text-decoration: none;
 }
 
 /*Footer*/
@@ -60,16 +170,9 @@ footer {
 	background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url(images/dark-vegas.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 100px 0;
 }
 
-section {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.grid {
-	display: grid;
+.grid-3-col-1small {
 	grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -83,7 +186,6 @@ footer p {
 	font-weight: 400;
 	font-size: 16px;
 	opacity: 0.7;
-	margin-right: 20px;
 	line-height: 24px;
 }
 
@@ -115,5 +217,12 @@ footer a {
 	}
 	header h3 {
 		font-size: 12px;
+	}
+	section {
+		padding: 30px;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+		grid-gap: 32px;
 	}
 }
